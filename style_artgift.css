@@ -1,1354 +1,418 @@
-body {
-  margin: 0px;
+#banner {
+  background-image: url('MainBG.png');
+  height: 772px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #C8AD99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .logo {
+  width: 647px;
+  height: 151px;
+}
+
+.microheading {
   width: 100%;
-  overflow-x: hidden;
+  background-color: #000000;
+  padding: 5px;
   font-family: "Noto Serif";
+  font-size: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (min-width: 1200px) {
-  #header {
-    width: 100%;
-    height: 120px;
-    background-color: #6F7282;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #podlogoimenu {
-    height: 120px;
-    display: flex;
-    align-items: center;
-  }
-
-  #logo {
-    width: 200px;
-    height: 120px;
-    background-image: url("Art-gift.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-
-  #menu {
-    width: 600px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 50px;
-  }
-
-  .menu_parts {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Oi", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .menu_parts:hover {
-    color: black;
-    font-size: 20px;
-  }
-
-  #contacts {
-    width: 300px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    grid-gap: 20px;
-    align-items: center;
-    font-family: "Noto Serif";
-    font-size: 20px;
-    color: white;
-  }
-
-  #basket {
-    width: 50px;
-    height: 50px;
-  }
-
-  #art-gift {
-    background-image: url('MainBG.png');
-    height: 772px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #C8AD99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #text {
-    width: 647px;
-    height: 151px;
-  }
-
-  .microheading {
-    width: 100%;
-    background-color: #000000;
-    padding: 5px;
-    font-family: "Noto Serif";
-    font-size: 80px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #canvas {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C8AD99;
-  }
-  *, *::after, *::before {
-    box-sizing: border-box;
-  }
-  .carousel {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding-top: 30px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .carousel ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: 5px solid black;
-  }
-  .slide {
-    position: absolute;
-    opacity: 0;
-    inset: 0;
-  }
-
-  .slide[data-active] {
-    opacity: 1;
-    z-index: 1;
-  }
-  .slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .slides {
-    width: 800px;
-    height: 800px;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .carousel-button {
-    font-size: 5rem;
-    position: absolute;
-    z-index: 2;
-    background: none;
-    border: none;
-    border-radius: 30px;
-    top: 50%;
-    color: grey;
-    background-color: black;
-    opacity: 50%;
-    padding: 0.5rem;
-    cursor: pointer;
-    align-items: center;
-  }
-  .carousel-button.next {
-    right: 100rem;
-  }
-  .carousel-button.prev {
-    left: 100rem;
-  }
-
-  .carousel-button:hover,
-  .carousel-button:focus {
-    color: white;
-    background-color: rgba(0, 0, 0, .2)
-  }
-
-  #bio {
-    width: 100%;
-    background-color: #C8AD99;
-    background-image: url('bluerug.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
-
-  #privet {
-    color: white;
-    font-family: "Noto Serif";
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 100px;
-  }
-
-  #selfie {
-    width: 1254px;
-    height: 767px;
-  }
-
-  #poka {
-    color: white;
-    font-family: "Noto Serif";
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 100px;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-  }
-  #tovari {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-image: url("redrug.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    font-family: "Noto Serif";
-    color: #000000;
-    font-size: 30px;
-    flex-flow: row;
-    flex-wrap: wrap;
-  }
-
-  .product {
-    width: 500px;
-    height: 500px;
-    border: 50px solid white;
-    padding: 10px;
-    font-size: 25px;
-    background-size: 600px;
-    position: relative;
-    left: 300px;
-
-  }
-
-  .product_image {
-    position: relative;
-    display: inline-block;
-    height: 150px;
-    border-radius: 60px;
-  }
-
-  .image-switch {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 20;
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
-
-  .image-switch__item {
-    flex-grow: 1;
-    cursor: pointer;
-  }
-
-  .image-switch__img {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-  }
-
-  .image-switch__img img {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .image-switch__item:first-child .image-switch__img {
-    opacity: 1;
-    z-index: -1;
-  }
-
-  .image-switch__item:hover .image-switch__img {
-    opacity: 1;
-    z-index: -1;
-  }
-
-  .image-pagination {
-    position: absolute;
-    z-index: 30;
-    left: 0;
-    bottom: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .image-pagination__item {
-    display: block;
-    width: 4px;
-    height: 4px;
-    border-radius: 100%;
-    margin: 0.3px;
-    background-color: white;
-  }
-
-  .image-pagination__item--active {
-    background-color: white;
-  }
-
-  .item_information {
-    font-weight: 400;
-    font-size: 25px;
-    background-color: white;
-    line-height: 20px;
-    color: black
-  }
-
-  .product__btn {
-    border: none;
-    padding: 14px;
-    border-radius: 4px;
-    width: 100%;
-    color: turquoise;
-    background-color: black;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .product__btn:hover {
-    background-color: turquoise;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  #table {
-    width: 100%;
-    height: auto;
-    background-color: #C8AD99;
-  }
-
-  .tablic {
-    font-family: "Noto Serif";
-    border: 6px solid #948473;
-    background-color: #FFE3C6;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    border-collapse: collapse;
-  }
-
-  table.tablic td,
-  table.tablic th {
-    border: 3px solid #948473;
-    padding: 4px 4px;
-  }
-
-  table.tablic thead {
-    background: #000000;
-    background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-    background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-    background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
-  }
-
-  table.tablic thead th {
-    font-family: "Noto Serif";
-    font-size: 45px;
-    font-weight: bold;
-    color: F0F0F0;
-    text-align: center;
-    border-left: 2px solid #948473;
-  }
-
-  table.tablic thead th:first-child {
-    border-left: none;
-  }
-
-  table.tablic tbody td {
-    font-family: "Noto Serif";
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  table.tablic tfoot td {
-    font-family: "Noto Serif";
-    font-size: 16px;
-  }
-
-  .calculator {
-    background-color: #C8AD99;
-    padding: 100px;
-    font-family: "Noto Serif";
-    font-size: 20;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #input-fields {
-    width: 100%;
-    text-align: left;
-
-  }
-
-  .input-container {
-    margin: 20px 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-    position: relative;
-  }
-
-  input {
-    background-color: #C8AD99;
-    font-family: "Noto Serif";
-    font-size: 15;
-    font-weight: bold;
-    padding: 5px;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-  }
-
-  #result {
-    display: none;
-  }
-
-  #calculate-btn {
-    background-color: #C8AD99;
-    box-shadow: 10px 6px 44px -14px rgba(0, 0, 0, 0.75);
-    font-family: "Noto Serif";
-    font-size: 20;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  #calculate-btn:hover {
-    box-shadow: none;
-    background-color: #948473;
-  }
-
-  .selector {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #results {
-    text-align: center;
-  }
-
-
-  #basement {
-    width: 100%;
-    height: 720px;
-    background-color: #000000;
-    font-family: "Noto Serif";
-    font-size: 30px;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-
-  #basement p {
-    text-align: left;
-    padding: 5px 0 5px 0;
-  }
-
-  #footer-1 {
-    background-image: url(Art-gift.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 258px;
-    height: 73px;
-    margin-top: 50px;
-  }
-
-  #footer-2 {
-    width: auto;
-    margin: 15px;
-  }
-
-  .footer-header {
-    font-family: "Noto Serif";
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 0;
-  }
-
-  #footer-3 {
-    width: auto;
-    margin: 15px;
-  }
-
-  #footer-4 {
-    position: relative;
-    width: auto;
-    margin: 15px;
-  }
-
-  .footer-media {
-    display: flex;
-  }
-
-  .footer-media img {
-    width: 60px;
-    padding-right: 40px;
-  }
-
-  #location {
-    bottom: 0;
-    right: 0;
-    position: absolute;
-  }
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C8AD99;
 }
 
-@media only screen and (min-width: 880px) and (max-width: 1200px) {
-  #header {
-    width: 100%;
-    height: 90px;
-    background-color: #6F7282;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #podlogoimenu {
-    height: 90px;
-    display: flex;
-    align-items: center;
-  }
-
-  #logo {
-    width: 150px;
-    height: 90px;
-    background-image: url("Art-gift.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-
-  #menu {
-    width: 360px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-  }
-
-  .menu_parts {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: "Oi", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .menu_parts:hover {
-    color: black;
-    font-size: 16px;
-  }
-
-  #contacts {
-    width: 200px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    grid-gap: 20px;
-    align-items: center;
-    font-family: "Noto Serif";
-    font-size: 14px;
-    color: white;
-  }
-
-  #basket {
-    width: 30px;
-    height: 30px;
-  }
-
-  #art-gift {
-    background-image: url('MainBG.png');
-    height: 772px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #C8AD99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #text {
-    width: 500px;
-    height: 116px;
-  }
-
-  .microheading {
-    width: 100%;
-    background-color: #000000;
-    padding: 5px;
-    font-family: "Noto Serif";
-    font-size: 55px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #canvas {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C8AD99;
-  }
-
-  #canvas1 {
-    width: 750px;
-    height: 637px;
-    padding: 40px;
-    margin: 0;
-  }
-
-  #bio {
-    width: 100%;
-    background-color: #C8AD99;
-    background-image: url('bluerug.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
-
-  #privet {
-    color: white;
-    font-family: "Noto Serif";
-    font-size: 30px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 60px;
-  }
-
-  #selfie {
-    width: 850px;
-    height: 521px;
-  }
-
-  #poka {
-    color: white;
-    font-family: "Noto Serif";
-    font-size: 30px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 60px;
-  }
-
-  #products {
-    display: flex;
-    width: 1920px;
-    height: 3000px;
-    background-image: url("redrug.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.4; 
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Noto Serif";
-    color: #000000;
-    flex-flow: row;
-    flex-wrap: wrap;
-  }
-
-  .product {
-    max-width: 500px;
-    height: 100%;
-    border: 3px solid #C2956E;
-    border-radius: 65px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    grid-auto-rows: 100px;
-    gap: 20px;
-    font-family: "Noto Serif";
-    height: 585px;
-    background-repeat: no-repeat;
-
-  }
-
-  .product_image {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    height: 200px;
-
-  }
-
-  .image-switch {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 20;
-    width: 200px;
-    height: 200px;
-    display: flex;
-
-  }
-
-  .image-switch_item {
-    flex-grow: 1;
-    cursor: pointer;
-
-  }
-
-  .image-switch_img {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    z-index: 2;
-    width: 200px;
-    height: 200px;
-    transform: translateX(-50%);
-    pointer-events: none;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-  }
-
-  .image-switch_img img {
-    display: block;
-    max-width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .image-switch_item:first-child .image-switch_img {
-    opacity: 1;
-    z-index: -1;
-  }
-
-  .image-switch_item:hover .image-switch_img {
-    opacity: 1;
-    z-index: -1;
-  }
-
-  .image-pagination {
-    position: absolute;
-    z-index: 30;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-  }
-
-  #table {
-    width: 100%;
-    height: auto;
-    background-color: #C8AD99;
-  }
-
-  .tablic {
-    font-family: "Noto Serif";
-    border: 6px solid #948473;
-    background-color: #FFE3C6;
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    border-collapse: collapse;
-  }
-
-  table.tablic td,
-  table.tablic th {
-    border: 3px solid #948473;
-    padding: 4px 4px;
-  }
-
-  table.tablic tbody td {
-    font-family: "Noto Serif";
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  table.tablic thead {
-    background: #000000;
-    background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-    background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-    background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
-  }
-
-  table.tablic thead th {
-    font-family: "Noto Serif";
-    font-size: 35px;
-    font-weight: bold;
-    color: F0F0F0;
-    text-align: center;
-    border-left: 2px solid #948473;
-  }
-
-  table.tablic thead th:first-child {
-    border-left: none;
-  }
-
-  table.tablic tfoot td {
-    font-family: "Noto Serif";
-    font-size: 16px;
-  }
-
-  .calculator {
-    background-color: #C8AD99;
-    padding: 60px;
-    font-family: "Noto Serif";
-    font-size: 16;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #input-fields {
-    width: 100%;
-    text-align: left;
-  }
-
-  .input-container {
-    margin: 20px 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-    position: relative;
-  }
-
-  input {
-    background-color: #C8AD99;
-    font-family: "Noto Serif";
-    font-size: 12;
-    font-weight: bold;
-    padding: 5px;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-  }
-
-  #result {
-    display: none;
-  }
-
-  #calculate-btn {
-    background-color: #C8AD99;
-    box-shadow: 10px 6px 44px -14px rgba(0, 0, 0, 0.75);
-    font-family: "Noto Serif";
-    font-size: 16;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  #calculate-btn:hover {
-    box-shadow: none;
-    background-color: #948473;
-  }
-
-  .selector {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #results {
-    text-align: center;
-  }
-
-  #basement {
-    width: 100%;
-    height: 590px;
-    background-color: #000000;
-    font-family: "Noto Serif";
-    font-size: 20px;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-
-  #basement p {
-    text-align: left;
-    padding: 5px 0 5px 0;
-  }
-
-  #footer-1 {
-    background-image: url(Art-gift.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 177px;
-    height: 73px;
-    margin-top: 10px;
-  }
-
-  #footer-2 {
-    width: auto;
-    margin: 15px;
-  }
-
-  .footer-header {
-    font-family: "Noto Serif";
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 0;
-  }
-
-  #footer-3 {
-    width: auto;
-    margin: 15px;
-  }
-
-  #footer-4 {
-    position: relative;
-    width: auto;
-    margin: 15px;
-  }
-
-  .footer-media {
-    display: flex;
-  }
-
-  .footer-media img {
-    width: 40px;
-    padding-right: 20px;
-  }
-
-  #location {
-    width: 40px;
-    padding-right: 20px;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-  }
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 880px) {
-  #header {
-    width: 100%;
-    height: 60px;
-    background-color: #6F7282;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+.carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
 
-  #podlogoimenu {
-    height: 60px;
-    display: flex;
-    align-items: center;
-  }
+.carousel ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 5px solid black;
+}
+.slide {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+}
 
-  #logo {
-    width: 120px;
-    height: 60px;
-    background-image: url("Art-gift.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+}
 
-  #menu {
-    width: 360px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 8px;
-  }
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-  .menu_parts {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-family: "Oi", serif;
-    font-weight: 200;
-    font-style: normal;
-  }
+.slides {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
 
-  .menu_parts:hover {
-    color: black;
-    font-size: 14px;
-  }
+.carousel-button {
+  font-size: 5rem;
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  border-radius: 30px;
+  top: 50%;
+  color: grey;
+  background-color: black;
+  opacity: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+}
 
-  #contacts {
-    width: 200px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    grid-gap: 20px;
-    align-items: center;
-    font-family: "Noto Serif";
-    font-size: 11px;
-    color: white;
-  }
+.carousel-button.next {
+  right: 100rem;
+}
 
-  #basket {
-    width: 25px;
-    height: 25px;
-  }
+.carousel-button.prev {
+  left: 100rem;
+}
 
-  #art-gift {
-    background-image: url('MainBG.png');
-    height: 400px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #C8AD99;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2)
+}
 
-  #text {
-    width: 350px;
-    height: 82px;
-  }
+#bio {
+  width: 100%;
+  background-color: #C8AD99;
+  background-image: url('bluerug.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
 
-  .microheading {
-    width: 100%;
-    background-color: #000000;
-    padding: 5px;
-    font-family: "Noto Serif";
-    font-size: 30px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+#privet {
+  color: white;
+  font-family: "Noto Serif";
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+}
 
-  #canvas {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #C8AD99;
-  }
+#selfie {
+  width: 1254px;
+  height: 767px;
+}
 
-  #canvas1 {
-    width: 390px;
-    height: 332px;
-    padding: 20px;
-    margin: 0;
-  }
+#poka {
+  color: white;
+  font-family: "Noto Serif";
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+}
 
-  #bio {
-    width: 100%;
-    background-color: #C8AD99;
-    background-image: url('bluerug.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-  #privet {
-    color: white;
-    font-family: "Noto Serif";
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-  }
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
 
-  #selfie {
-    width: 550px;
-    height: 337px;
-  }
+#products {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 5rem;
+  background-image: url("redrug.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  font-family: "Noto Serif";
+  color: #111111;
+  font-size: 30px;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
 
-  #poka {
-    color: white;
-    font-family: "Noto Serif";
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
-  }
+.card {
+  background-color: #EEEEEE;
+  padding: 10px;
+  border-radius: 32px;
+  text-align: center;
+}
 
-  #tovari {
-    background-image: url('redrug.png');
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-  }
+.card-image {
+  position: relative;
+  display: block;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
 
-  #portreripeizazh {
-    background-image: url('portlandtemp.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 900px;
-    height: 351px;
-  }
+.servheadline {
+  font-family: 'Noto Serif';
+  font-size: 32;
+  letter-spacing: 1.5;
+  color: #111;
+  justify-content: center;
+  padding: 5rem;
+}
 
-  #naturmort {
-    background-image: url('stillifetemp.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 265px;
-    height: 351px;
-  }
+.card_link {
+  height: 70px;
+  width: 290px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  bottom: 5rem;
+  left: 6rem;
+  padding: 15px;
+  text-decoration: none;
+  font-family: 'Noto Serif';
+  font-size: 32px;
+  color: white;
+  background-color: #58B3B9;
+  background-repeat: no-repeat;
+  align-content: center;
+  border-radius: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  #table {
-    width: 100%;
-    height: auto;
-    background-color: #C8AD99;
-  }
+.card_link:hover {
+  text-decoration: underline;
+  background-color: #58C9B3;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  .tablic {
-    font-family: "Noto Serif";
-    border: 6px solid #948473;
-    background-color: #FFE3C6;
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    border-collapse: collapse;
-  }
+#table {
+  width: 100%;
+  height: auto;
+  background-color: #C8AD99;
+}
 
-  table.tablic td,
-  table.tablic th {
-    border: 3px solid #948473;
-    padding: 4px 4px;
-  }
+.tablic {
+  font-family: "Noto Serif";
+  border: 6px solid #948473;
+  background-color: #FFE3C6;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  border-collapse: collapse;
+}
 
-  table.tablic tbody td {
-    font-family: "Noto Serif";
-    font-size: 20px;
-    font-weight: bold;
-  }
+table.tablic td,
+table.tablic th {
+  border: 3px solid #948473;
+  padding: 4px 4px;
+}
 
-  table.tablic thead {
-    background: #000000;
-    background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-    background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
-    background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
-  }
+table.tablic thead {
+  background: #000000;
+  background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+  background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+  background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
+}
 
-  table.tablic thead th {
-    font-family: "Noto Serif";
-    font-size: 25px;
-    font-weight: bold;
-    color: F0F0F0;
-    text-align: center;
-    border-left: 2px solid #948473;
-  }
+table.tablic thead th {
+  font-family: "Noto Serif";
+  font-size: 45px;
+  font-weight: bold;
+  color: F0F0F0;
+  text-align: center;
+  border-left: 2px solid #948473;
+}
 
-  table.tablic thead th:first-child {
-    border-left: none;
-  }
+table.tablic thead th:first-child {
+  border-left: none;
+}
 
-  table.tablic tfoot td {
-    font-family: "Noto Serif";
-    font-size: 16px;
-  }
+table.tablic tbody td {
+  font-family: "Noto Serif";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+table.tablic tfoot td {
+  font-family: "Noto Serif";
+  font-size: 16px;
+}
+
+.calculator {
+  background-color: #C8AD99;
+  padding: 100px;
+  font-family: "Noto Serif";
+  font-size: 20;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#input-fields {
+  width: 100%;
+  text-align: left;
+
+}
+
+.input-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+input {
+  background-color: #C8AD99;
+  font-family: "Noto Serif";
+  font-size: 15;
+  font-weight: bold;
+  padding: 5px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+#result {
+  display: none;
+}
+
+#calculate-btn {
+  background-color: #C8AD99;
+  box-shadow: 10px 6px 44px -14px rgba(0, 0, 0, 0.75);
+  font-family: "Noto Serif";
+  font-size: 20;
+  font-weight: bold;
+  text-align: center;
+}
+
+#calculate-btn:hover {
+  box-shadow: none;
+  background-color: #948473;
+}
+
+.selector {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#results {
+  text-align: center;
+}
 
 
-  .calculator {
-    background-color: #C8AD99;
-    padding: 30px;
-    font-family: "Noto Serif";
-    font-size: 12;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+#basement {
+  width: 100%;
+  height: 720px;
+  background-color: #000000;
+  font-family: "Noto Serif";
+  font-size: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
 
-  #input-fields {
-    width: 100%;
-    text-align: left;
-  }
+#basement p {
+  text-align: left;
+  padding: 5px 0 5px 0;
+}
 
-  .input-container {
-    margin: 10px 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex: 1;
-    width: 100%;
-    position: relative;
-  }
+#footer-1 {
+  background-image: url(Art-gift.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 258px;
+  height: 73px;
+  margin-top: 50px;
+}
 
-  input {
-    background-color: #C8AD99;
-    font-family: "Noto Serif";
-    font-size: 10;
-    font-weight: bold;
-    padding: 5px;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-  }
+#footer-2 {
+  width: auto;
+  margin: 15px;
+}
 
-  #result {
-    display: none;
-  }
+.footer-header {
+  font-family: "Noto Serif";
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 0;
+}
 
-  #calculate-btn {
-    background-color: #C8AD99;
-    box-shadow: 10px 6px 44px -14px rgba(0, 0, 0, 0.75);
-    font-family: "Noto Serif";
-    font-size: 12;
-    font-weight: bold;
-    text-align: center;
-  }
+#footer-3 {
+  width: auto;
+  margin: 15px;
+}
 
-  #calculate-btn:hover {
-    box-shadow: none;
-    background-color: #948473;
-  }
+#footer-4 {
+  position: relative;
+  width: auto;
+  margin: 15px;
+}
 
-  .selector {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.footer-media {
+  display: flex;
+}
 
-  #results {
-    text-align: center;
-  }
-
-  #basement {
-    width: 100%;
-    height: 320px;
-    background-color: #000000;
-    font-family: "Noto Serif";
-    font-size: 11px;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-
-  #basement p {
-    text-align: left;
-    padding: 5px 0 5px 0;
-  }
-
-  #footer-1 {
-    background-image: url(Art-gift.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 50px;
-    margin-top: 10px;
-  }
-
-  #footer-2 {
-    width: auto;
-    margin: 15px;
-  }
-
-  .footer-header {
-    font-family: "Noto Serif";
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 0;
-  }
-
-  #footer-3 {
-    width: auto;
-    margin: 15px;
-  }
-
-  #footer-4 {
-    position: relative;
-    width: auto;
-    margin: 15px;
-  }
-
-  .footer-media {
-    display: flex;
-  }
-
-  .footer-media img {
-    width: 20px;
-    padding-right: 10px;
-  }
-
-  #location {
-    width: 20px;
-    padding-right: 10px;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-  }
+.footer-media img {
+  width: 60px;
+  padding-right: 40px;
 }
