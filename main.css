@@ -1,0 +1,405 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Noto Serif";
+}
+
+/* HEADER */
+
+#header {
+  width: 100%;
+  height: 120px;
+  background-color: #6F7282;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+#navbar .logo {
+  width: 200px;
+  height: 120px;
+  margin-right: 30px;
+  background-image: url("ArtGift.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#navbar .menu {
+  width: 600px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.menu_parts {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  /*
+  font-family: "Oi", serif;
+  */
+  font-weight: 400;
+  font-style: normal;
+}
+
+.menu_parts:hover {
+  text-decoration: underline;
+}
+
+#contacts {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  grid-gap: 20px;
+  align-items: center;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  color: white;
+}
+
+/* HEADER END */
+
+#banner {
+  background-image: url('MainBG.jpg');
+  height: 772px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #C8AD99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner .logo {
+  width: 647px;
+  height: 151px;
+}
+
+.microheading {
+  width: 100%;
+  background-color: #111;
+  padding: 5px;
+  font-family: "Noto Serif";
+  font-size: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C8AD99;
+}
+
+#bio {
+  width: 100%;
+  background-color: #C8AD99;
+  background-image: url('bluerug.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#privet, #poka {
+  color: white;
+  font-family: "Noto Serif";
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+}
+
+#selfie {
+  width: 1254px;
+  height: 767px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+#products {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 5rem;
+  background-image: url("redrug.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  font-family: "Noto Serif";
+  color: #111111;
+  font-size: 30px;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #EEEEEE;
+  padding: 10px;
+  border-radius: 32px;
+  text-align: center;
+  flex-grow: 0.28;
+  flex-basis: 0;
+}
+
+.card-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.servheadline {
+  font-family: 'Noto Serif';
+  font-size: 32;
+  letter-spacing: 1.5;
+  color: #111;
+}
+
+#products .card .card_link {
+  height: 70px;
+  width: 290px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  margin: 15px auto;
+  border: none;
+  text-decoration: none;
+  font-family: 'Noto Serif';
+  font-size: 32px;
+  color: white;
+  background-color: #58B3B9;
+  background-repeat: no-repeat;
+  align-content: center;
+  border-radius: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#products .card .card_link:hover {
+  text-decoration: underline;
+  background-color: #58C9B3;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#table {
+  width: 100%;
+  height: auto;
+  background-color: #C8AD99;
+}
+
+.tablic {
+  font-family: "Noto Serif";
+  border: 6px solid #948473;
+  background-color: #FFE3C6;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table.tablic td,
+table.tablic th {
+  border: 3px solid #948473;
+  padding: 4px 4px;
+}
+
+table.tablic thead {
+  background: #111;
+  background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+  background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+  background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
+}
+
+table.tablic thead th {
+  font-family: "Noto Serif";
+  font-size: 45px;
+  font-weight: bold;
+  color: F0F0F0;
+  text-align: center;
+  border-left: 2px solid #948473;
+}
+
+table.tablic thead th:first-child {
+  border-left: none;
+}
+
+table.tablic tbody td {
+  font-family: "Noto Serif";
+  font-size: 40px;
+  font-weight: bold;
+}
+
+table.tablic tfoot td {
+  font-family: "Noto Serif";
+  font-size: 16px;
+}
+
+.calculator {
+  background-color: #C8AD99;
+  padding: 100px;
+  font-family: "Noto Serif";
+  font-size: 20;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#input-fields {
+  width: 100%;
+  text-align: left;
+
+}
+
+.input-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+input {
+  background-color: #C8AD99;
+  font-family: "Noto Serif";
+  font-size: 15;
+  font-weight: bold;
+  padding: 5px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+#result {
+  display: none;
+}
+
+#calculate-btn {
+  background-color: #C8AD99;
+  box-shadow: 10px 6px 44px -14px rgba(0, 0, 0, 0.75);
+  font-family: "Noto Serif";
+  font-size: 20;
+  font-weight: bold;
+  text-align: center;
+}
+
+#calculate-btn:hover {
+  box-shadow: none;
+  background-color: #948473;
+}
+
+.selector {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#results {
+  text-align: center;
+}
+
+#basement {
+  width: 100%;
+  height: 380px;
+  background-color: #111;
+  font-family: "Noto Serif";
+  font-size: 18px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#basement p {
+  text-align: left;
+  padding: 5px 0 5px 0;
+}
+
+#footer-1 {
+  padding: 10px;
+}
+
+#footer-2 {
+  width: auto;
+  margin: 15px;
+  text-align: left;
+}
+
+#footer-2 a {
+  color: #EEE;
+  text-decoration: none;
+}
+#footer-2 a:hover {
+  text-decoration: underline;
+}
+
+.footer-header {
+  font-family: "Noto Serif";
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#footer-3 {
+  width: auto;
+  margin: 15px;
+}
+
+#footer-4 {
+  position: relative;
+  width: auto;
+  margin: 15px;
+}
+
+.footer-media {
+  display: flex;
+}
+
+.footer-media img {
+  width: 60px;
+  padding-right: 40px;
+}

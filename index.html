@@ -1,0 +1,282 @@
+<html>
+  <head>
+    <title>Art-gift</title>
+    <!-- externals deps -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom -->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="product-preview.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="navbar">
+        <div class="logo"></div>
+        <div class="menu">
+          <a class="menu_parts" href="#gallery">Галерея</a>
+          <a class="menu_parts" href="#about">О нас</a>
+          <a class="menu_parts" href="#services">Товары</a>
+          <a class="menu_parts" href="#pricelist">Цены</a>
+        </div>
+      </div>
+      <div id="contacts">
+        <p id="number">+7 (941) 232-55-67</p>
+      </div>
+      <!--
+      <div id="easynetshop-cart">
+        <img class="icon" src="Basket.png">
+      </div>
+      -->
+    </div>
+
+    <div id="banner">
+      <img class="logo" src="BigLogo.png">
+    </div>
+
+    <div id="gallery" class="microheading">галерея</div>
+    <div id="canvas">
+      <div class="carousel">
+        <span class="carousel-button next" onclick="onNext();">&#8249;</span>
+        <span class="carousel-button prev" onclick="onPrev();">&#8250;</span>
+        <ul class="slides">
+          <li class="slide" data-active>
+            <img src="img/portrait-1.jpg" alt="Portrait 1">
+          </li>
+          <li class="slide">
+            <img src="img/portrait-2.jpg" alt="Portrait 2">
+          </li>
+          <li class="slide">
+            <img src="img/portrait-3.jpg" alt="Portrait 3">
+          </li>
+          <li class="slide">
+            <img src="img/scenery-1.jpg" alt="Scenery 1">
+          </li>
+          <li class="slide">
+            <img src="img/scenery-2.jpg" alt="Scenery 2">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-1.jpg" alt="Still Life 1">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-2.jpg" alt="Still Life 2">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-3.jpg" alt="Still Life 3">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-4.jpg" alt="Still Life 4">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-5.jpg" alt="Still Life 5">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-6.jpg" alt="Still Life 6">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-7.jpg" alt="Still Life 7">
+          </li>
+          <li class="slide">
+            <img src="img/still-life-8.jpg" alt="Still Life 8">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="about" class="microheading">о нас</div>
+
+    <div id="bio">
+      <p id="privet">
+      Приветствую на сайте Art-gift!
+      <br>
+      Здесь вы можете приобрести уникальный подарок для своих близких и порадовать
+      себя интерьерной картиной,или портретом на холсте на заказ от Лады Пичугиной.
+      </p>
+      <img id="selfie" src="Selfie.jpg">
+      <p id="poka">
+      Художница создает картины более 5 лет.
+      <br>
+      Основные направления работ - портрет и интерьерный натюрморт.
+      <br>
+      Любимый материал - художественное масло.
+      <br>
+      “Заказывайте картины, насладитесь эмоциями через мое творчество” - Лада.
+      </p>
+    </div>
+
+    <div id="services" class="microheading">товары</div>
+
+    <div id="products">
+        <div class="card">
+          <div class="card-image">
+            <div class="product__switch image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/portrait-1.jpg" alt="Портрет"></div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/portrait-2.jpg" alt="Портрет"></div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/portrait-3.jpg" alt="Портрет"></div>
+              </div>
+            </div>
+          </div>
+          <div class="servheadline">
+            <b>Портрет</b><br>
+            20*20 см<br>
+            <b>4500 Р.</b>
+          </div>
+          <a class="btn-ens-action btn-ens-style card_link" data-rel="31649488335554">заказать</a>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <div class="image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/scenery-1.jpg" alt="Пейзаж"></div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/scenery-2.jpg" alt="Пейзаж"></div>
+              </div>
+            </div>
+            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+          </div>
+          <div class="servheadline">
+            <b>Пейзаж</b><br>
+            60*60 см<br>
+            <b>1500 Р.</b>
+          </div>
+          <a class="btn-ens-action btn-ens-style card_link" data-rel="31649488335555">заказать</a>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <div class="image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/still-life-1.jpg" alt="Натюрморт"></div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/still-life-2.jpg" alt="Натюрморт"></div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img"><img src="img/still-life-3.jpg" alt="Натюрморт"></div>
+              </div>
+            </div>
+          </div>
+          <div class="servheadline">
+            <b>Натюрморт</b><br>
+            40*40 см<br>
+            <b>9500 Р.</b>
+          </div>
+          <a class="btn-ens-action btn-ens-style card_link" data-rel="31649488335556">заказать</a>
+        </div>
+    </div>
+
+    <div id="pricelist" class="microheading">прайс-лист</div>
+
+    <div id="table">
+      <table class="tablic">
+        <thead>
+          <tr>
+            <th>Размер холста</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20х20 см</td>
+            <td>4500р</td>
+          </tr>
+          <tr>
+            <td>40х40 см</td>
+            <td>9500р</td>
+          </tr>
+          <tr>
+            <td>60х60 см</td>
+            <td>14000р</td>
+          </tr>
+          <tr>
+            <td>100х100 см</td>
+            <td>24000р</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="microheading">калькулятор цены</div>
+
+    <div class="calculator">
+      <div id="input-fields">
+        <div class="input-container" id="height-div">
+          <label for="height">Высота, СМ</label>
+          <input type="number" id="height">
+        </div>
+        <div class="input-container" id="width-div">
+          <label for="width">Ширина, СМ</label>
+          <input type="number" id="width">
+        </div>
+      </div>
+
+      <div>
+        <button id="calculate-btn">Рассчитать стоимость</button>
+      </div>
+
+      <p id="message">
+      Для получения цены введите высоту и ширину.
+      </p>
+
+      <p id="result">
+      Цена: <span id="price">0</span>
+      </p>
+    </div>
+
+    <div id="basement">
+      <div id="footer-1">
+        <a class href="#"><img src="ArtGift.png" alt="ArtGift"></a>
+      </div>
+      <div id="footer-2">
+        <p class="footer-header">Меню</p>
+        <p><a href="#gallery">Галерея</a></p>
+        <p><a href="#about">О нас</a></p>
+        <p><a href="#services">Товары</a></p>
+        <p><a href="#pricelist">Цены</a></p>
+      </div>
+      <div id="footer-3">
+        <p class="footer-header">Информация</p>
+        <p>Условия доставки</p>
+        <p>Условия возврата</p>
+        <p>Правила ухода и гарантия</p>
+        <p>Политика конфиденциальности</p>
+      </div>
+      <div id="footer-4">
+        <p class="footer-header">Контакты</p>
+        <p>+7(902)800-12-34</p>
+        <p>artgift@gmail.com</p>
+        <div class="footer-media">
+          <img src="Instagram.png">
+          <img src="Telegram.png">
+          <img src="Location.png">
+        </div>
+      </div>
+    </div>
+
+    <link href="https://lk.easynetshop.ru/frontend/v5/ens-31649488.css" rel="stylesheet">
+    <script defer src="https://lk.easynetshop.ru/frontend/v5/ens-31649488.js"></script>
+    <style>
+      #enscart_wrapper {
+        top: 30px;
+        right: 40px;
+        bottom: auto;
+        left: auto;
+      }
+    </style>
+  </body>
+
+</html>
+
