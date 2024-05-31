@@ -1,0 +1,207 @@
+<html>
+
+<head>
+  <title>Art-gift</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style_artgift.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <div id="podlogoimenu">
+      <div id="logo"></div>
+      <div id="menu">
+        <a class="menu_parts" href="#">Галерея</a>
+        <a class="menu_parts" href="#">О нас</a>
+        <a class="menu_parts" href="#">Товары</a>
+        <a class="menu_parts" href="#">Цены</a>
+      </div>
+    </div>
+    <div id="contacts"> <img id="basket" src="Basket.png">
+      <p id="number">+7 (941) 232-55-67</p>
+    </div>
+  </div>
+
+  <div id="art-gift"> <img id="text" src="BigLogo.png"> </div>
+
+  <div class="microheading"> <a>галерея</a> </div>
+
+  <div id="canvas">
+    <div class="carousel">
+      <span class="carousel-button next" onclick="onNext();">&#8249;</span>
+      <span class="carousel-button prev" onclick="onPrev();">&#8250;</span>
+      <ul class="slides">
+        <li class="slide" data-active>
+          <img src="img/portrait-1.jpg" alt="Portrait 1">
+        </li>
+        <li class="slide">
+          <img src="img/portrait-2.jpg" alt="Portrait 2">
+        </li>
+        <li class="slide">
+          <img src="img/portrait-3.jpg" alt="Portrait 3">
+        </li>
+        <li class="slide">
+          <img src="img/scenery-1.jpg" alt="Scenery 1">
+        </li>
+        <li class="slide">
+          <img src="img/scenery-2.jpg" alt="Scenery 2">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-1.jpg" alt="Still Life 1">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-2.jpg" alt="Still Life 2">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-3.jpg" alt="Still Life 3">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-4.jpg" alt="Still Life 4">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-5.jpg" alt="Still Life 5">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-6.jpg" alt="Still Life 6">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-7.jpg" alt="Still Life 7">
+        </li>
+        <li class="slide">
+          <img src="img/still-life-8.jpg" alt="Still Life 8">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="microheading"> <a>о нас</a> </div>
+
+  <div id="bio">
+    <a id="privet"> Приветствую на сайте Art-gift!<br>Здесь вы можете приобрести уникальный подарок для своих
+      близких и порадовать себя интерьерной картиной,или портретом на холсте на заказ от Лады Пичугиной. </a>
+    <img id="selfie" src="Selfie.png">
+    <a id="poka"> Художница создает картины более 5 лет.<br>Основные направления работ - портрет и интерьерный
+      натюрморт; Любимый материал - художественное масло.<br>“Заказывайте картины, насладитесь эмоциями через
+      мое творчество” - Лада. </a>
+  </div>
+
+  <div class="microheading"> <a>товары</a> </div>
+
+  <div id="tovari">
+    <article class="product">
+      <a href="#" class="product__image">
+        <div class="product__switch image-switch">
+          <div class="image-switch__item">
+            <div class="image-switch__img"><img src="img/portrait-1.jpg" alt="Портрет"></div>
+          </div>
+          <div class="image-switch__item">
+            <div class="image-switch__img"><img src="img/portrait-2.jpg" alt="Портрет"></div>
+          </div>
+          <div class="image-switch__item">
+            <div class="image-switch__img"><img src="img/portrait-3.jpg" alt="Портрет"></div>
+          </div>
+        </div>
+        <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+      </a>
+      <div class="item_information">
+        <h3>Портрет 20*20 см</h3>
+    </article>
+      </div>
+
+      <div class="microheading"> <a>прайс-лист</a> </div>
+
+      <div id="table">
+        <table class="tablic">
+          <thead>
+            <tr>
+              <th>Размер холста</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>20х20 см</td>
+              <td>4500р</td>
+            </tr>
+            <tr>
+              <td>40х40 см</td>
+              <td>9500р</td>
+            </tr>
+            <tr>
+              <td>60х60 см</td>
+              <td>14000р</td>
+            </tr>
+            <tr>
+              <td>100х100 см</td>
+              <td>24000р</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="microheading"> <a>калькулятор цены</a> </div>
+
+
+
+      <div class="calculator">
+        <div id="input-fields">
+          <div class="input-container" id="height-div">
+            <label for="height">Высота, СМ</label>
+            <input type="number" id="height">
+          </div>
+          <div class="input-container" id="width-div">
+            <label for="width">Ширина, СМ</label>
+            <input type="number" id="width">
+          </div>
+        </div>
+
+        <div>
+          <button id="calculate-btn">Рассчитать стоимость</button>
+        </div>
+
+        <p id="message">
+        Для получения цены введите высоту и ширину.
+        </p>
+
+        <p id="result">
+        Цена: <span id="price">0</span>
+        </p>
+      </div>
+
+      <div id="basement">
+        <div id="footer-1"> <a class href="Pichugina_2.html"></a> </div>
+        <div id="footer-2">
+          <p class="footer-header">Меню</p>
+          <p>Галерея</p>
+          <p>О нас</p>
+          <p>Товары</p>
+          <p>Цены</p>
+        </div>
+        <div id="footer-3">
+          <p class="footer-header">Информация</p>
+          <p>Условия доставки</p>
+          <p>Условия возврата</p>
+          <p>Правила ухода и гарантия</p>
+          <p>Политика конфиденциальности</p>
+        </div>
+        <div id="footer-4">
+          <p class="footer-header">Контакты</p>
+          <p>+7(902)800-12-34</p>
+          <p>artgift@gmail.com</p>
+          <div class="footer-media">
+            <img src="Instagram.png">
+            <img src="Telegram.png">
+            <img id="Location" src="Location.png">
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
+
